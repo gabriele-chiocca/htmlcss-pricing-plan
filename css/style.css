@@ -36,6 +36,7 @@ ul{
 }
 
 .card-wrapper {
+ margin-top: 2rem;
  display: flex;
  flex-wrap: wrap;
  gap: 1rem;
@@ -43,5 +44,60 @@ ul{
 
 .card{
     width: calc(100% / 3 - 1rem * 2/3);
-    min-width: 200px;
+    min-width: 250px;
+    flex-grow: 1;
+    box-shadow: 0 0 6px 0 gray;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.card-evidenziata
+
+.prezzo {
+    text-align: center;
+}
+
+.btn-primario {
+    display: block;
+    border-radius: 1rem;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-color: white;
+}
+
+.btn-secondario {
+     
+    display: block;
+    border-radius: 1rem;
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-color: blueviolet;
+
+}
+
+.button > .btn-primario {
+    width: 100%;
+}
+
+.button > .btn-secondario {
+    width: 100%;
+}
+
+.vantaggi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.vantaggi li {
+    width: 250px;
+    
 }
