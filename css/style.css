@@ -24,11 +24,6 @@ ul{
 }
 
 
-.card-deck {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .inactive {
     color: rgb(78, 78, 78);
     font-size: 0.7rem;
@@ -42,9 +37,11 @@ ul{
 
 .card-wrapper {
  display: flex;
+ flex-wrap: wrap;
  gap: 1rem;
 }
 
 .card{
     width: calc(100% / 3 - 1rem * 2/3);
+    min-width: 200px;
 }
