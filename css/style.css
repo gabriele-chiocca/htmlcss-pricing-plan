@@ -1,0 +1,47 @@
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inactive {
+    color: rgb(78, 78, 78);
+    font-size: 0.7rem;
+}
+
+/* Sezione pricing */
+
+#pricing {
+ padding: 2rem;
+}
+
+.card-wrapper {
+ display: flex;
+ align-items: center;
+ gap: ;
+}
