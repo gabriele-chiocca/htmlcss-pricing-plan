@@ -42,6 +42,9 @@ ul{
 
 .card-wrapper {
  display: flex;
- align-items: center;
- gap: ;
+ gap: 1rem;
+}
+
+.card{
+    width: calc(100% / 3 - 1rem * 2/3);
 }
