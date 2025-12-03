@@ -1,5 +1,9 @@
 /*Reset*/
 
+body {
+    font-family: sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -29,10 +33,20 @@ ul{
     font-size: 0.7rem;
 }
 
+.inactive-high {
+    color: rgb(209, 209, 209);
+    font-size: 0.7rem;
+}
+
 /* Sezione pricing */
 
 #pricing {
  padding: 2rem;
+}
+
+.header-pricing {
+    display: flex;
+    margin-top: 24px;
 }
 
 .card-wrapper {
@@ -51,10 +65,21 @@ ul{
     border-radius: 1rem;
 }
 
-.card-evidenziata
+.card-evidenziata {
+    width: calc(100% / 3 - 1rem * 2/3);
+    min-width: 250px;
+    flex-grow: 1;
+    box-shadow: 0 0 6px 0 gray;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: blueviolet;
+    color: white;
+}
 
 .prezzo {
     text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .btn-primario {
@@ -94,10 +119,96 @@ ul{
 .vantaggi {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    margin: 16px;
+    gap: 8px;
+} 
+
+.vantaggi-box-inferiore {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 16px;
+    gap: 8px;
+    justify-content: space-around;
     justify-content: space-evenly;
 }
 
-.vantaggi li {
-    width: 250px;
-    
+
+.lista-order {
+    width: 300px;
+}
+
+.toggle {
+    width: 2rem;
+    height: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.toggle-button {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle.active > .toggle-button {
+    left: auto;
+    right: -1px;
+}
+
+.container-toggle {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.Primo-Toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.Secondo-Toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: 16px;
+}
+
+.titolo-prezzo {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.mesi {
+    font-weight: 200;
+    color: rgb(189, 189, 189);
+}
+
+.Info-sconto {
+    margin: 16px;
+}
+
+.tag-sconto {
+    background-color: rgb(240, 240, 240);
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
 }
